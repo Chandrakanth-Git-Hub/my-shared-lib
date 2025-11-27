@@ -1,0 +1,9 @@
+@Library('jenkins-shared-lib') _
+import org.example.Util
+
+def util = new Util(this)
+
+commonPipeline(
+    appName: 'my-enterprise-app',
+    deploy: true
+)
